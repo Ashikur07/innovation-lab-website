@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "daisyui": "^5.0.0",
+    "framer-motion": "^12.4.10",
     "next": "15.2.0",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-responsive-carousel": "^3.2.23",
+    "swiper": "^11.2.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
