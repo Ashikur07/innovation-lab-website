@@ -7,10 +7,16 @@ import { FaRegEyeSlash } from "react-icons/fa";
 import Link from 'next/link'; // Use next/link for navigation
 import { useState } from "react";
 import { useRouter } from 'next/navigation'; // Use next/navigation for client-side routing
+import { signIn } from "next-auth/react";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const router = useRouter(); // Now using next/navigation
+
+    const handleGoogleSignIn = () => {
+        signIn("google", { callbackUrl: '/' }); // Redirect to home page after Google login
+    };
+
 
     return (
         <div className='bg-[#c2d0d9] px-5 lg:px-0 w-full py-10'>
@@ -19,7 +25,9 @@ const Login = () => {
 
                 <h1 className='text-center text-2xl font-bold py-7'>Please login</h1>
 
-                <button className='border border-[#a39898] w-full p-2 gap-16 flex rounded-md'>
+                <button
+                    onClick={handleGoogleSignIn}
+                    className='border border-[#a39898] w-full p-2 gap-16 flex rounded-md cursor-pointer'>
                     <FcGoogle className='text-xl' />
                     <p className='font-semibold'>
                         Sign in with Google
