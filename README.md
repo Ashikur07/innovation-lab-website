@@ -43,5 +43,5 @@ Deploy using [Vercel](https://vercel.com) or any other hosting service of your c
 
 ## 📝 License
 
-This project is licensed unde
+This project is licensed und
 
