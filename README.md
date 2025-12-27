@@ -1,4 +1,4 @@
-# Project Title
+look# Project Title
 
 Welcome to the **Next.js** project! This is a web application built with **Next.js**.
 
@@ -43,5 +43,5 @@ Deploy using [Vercel](https://vercel.com) or any other hosting service of your c
 
 ## 📝 License
 
-This project is licensed
+This project is license
 
